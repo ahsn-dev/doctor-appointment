@@ -1,0 +1,61 @@
+{
+  "doctors": [
+    {
+      "id": 1,
+      "name": "محمد مهدی متقی",
+      "expertise": "دندانپزشک",
+      "week": {
+        "Saturday": true,
+        "Sunday": true,
+        "Monday": true,
+        "Tuesday": true,
+        "Wednesday": true,
+        "Thursday": true,
+        "Friday": true
+      }
+    },
+    {
+      "id": 2,
+      "name": "مهدی روحی",
+      "expertise": "متخصص اعصاب و روان",
+      "week": {
+        "Saturday": true,
+        "Sunday": true,
+        "Monday": true,
+        "Tuesday": true,
+        "Wednesday": true,
+        "Thursday": true,
+        "Friday": true
+      }
+    },
+    {
+      "id": 3,
+      "name": "زهرا کاروان",
+      "expertise": "روانشناس",
+      "week": {
+        "Saturday": true,
+        "Sunday": true,
+        "Monday": true,
+        "Tuesday": true,
+        "Wednesday": true,
+        "Thursday": true,
+        "Friday": true
+      }
+    },
+    {
+      "id": 4,
+      "name": "امیرحسین سعیدانژاد",
+      "expertise": "متخصص زیبایی",
+      "week": {
+        "Saturday": true,
+        "Sunday": true,
+        "Monday": true,
+        "Tuesday": true,
+        "Wednesday": true,
+        "Thursday": true,
+        "Friday": true
+      }
+    }
+  ],
+  "appoinments": []
+}

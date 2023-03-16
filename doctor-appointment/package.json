@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint --fix .",
-    "format": "prettier -w ."
+    "format": "prettier -w .",
+    "json-server": "json-server --watch db.json"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
