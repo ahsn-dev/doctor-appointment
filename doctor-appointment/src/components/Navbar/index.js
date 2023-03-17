@@ -1,4 +1,5 @@
 import El from "@/library/El";
+import Dropdown from "../Dropdown";
 
 const Navbar = () => {
   return El({
@@ -13,7 +14,8 @@ const Navbar = () => {
       El({
         element: "a",
         href: "",
-        child: "تخصص‌ها",
+        child: ["تخصص‌ها", Dropdown()],
+        className: "relative [&>*]:hover:block",
       }),
       El({
         element: "a",
@@ -23,7 +25,7 @@ const Navbar = () => {
       El({
         element: "input",
         type: "text",
-        className: "border-0 rounded-full pr-4 outline-none",
+        className: "border-0 rounded-full pr-4 outline-none bg-[#126E82]",
         placeholder: "جستجو...",
       }),
     ],

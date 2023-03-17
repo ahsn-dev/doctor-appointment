@@ -5,6 +5,7 @@ import Main from "./layout/Main";
 const App = () => {
   const app = El({
     element: "div",
+    className: "relative",
     child: [Header(), Main()],
   });
 

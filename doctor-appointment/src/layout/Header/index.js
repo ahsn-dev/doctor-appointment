@@ -4,7 +4,7 @@ import El from "@/library/El";
 const Header = () => {
   return El({
     element: "header",
-    className: "bg-gray-200",
+    className: "bg-[#132c33] text-white",
     child: [Navbar()],
   });
 };

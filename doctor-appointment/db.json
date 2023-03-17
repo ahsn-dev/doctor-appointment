@@ -5,13 +5,13 @@
       "name": "محمد مهدی متقی",
       "expertise": "دندانپزشک",
       "week": {
-        "Saturday": true,
-        "Sunday": true,
-        "Monday": true,
-        "Tuesday": true,
-        "Wednesday": true,
-        "Thursday": true,
-        "Friday": true
+        "شنبه": true,
+        "یکشنبه": true,
+        "دوشنبه": true,
+        "سه‌شنبه": true,
+        "چهارشنبه": true,
+        "پنجشنبه": false,
+        "جمعه": true
       }
     },
     {
@@ -19,13 +19,13 @@
       "name": "مهدی روحی",
       "expertise": "متخصص اعصاب و روان",
       "week": {
-        "Saturday": true,
-        "Sunday": true,
-        "Monday": true,
-        "Tuesday": true,
-        "Wednesday": true,
-        "Thursday": true,
-        "Friday": true
+        "شنبه": true,
+        "یکشنبه": true,
+        "دوشنبه": true,
+        "سه‌شنبه": true,
+        "چهارشنبه": true,
+        "پنجشنبه": true,
+        "جمعه": true
       }
     },
     {
@@ -33,13 +33,13 @@
       "name": "زهرا کاروان",
       "expertise": "روانشناس",
       "week": {
-        "Saturday": true,
-        "Sunday": true,
-        "Monday": true,
-        "Tuesday": true,
-        "Wednesday": true,
-        "Thursday": true,
-        "Friday": true
+        "شنبه": true,
+        "یکشنبه": true,
+        "دوشنبه": true,
+        "سه‌شنبه": true,
+        "چهارشنبه": true,
+        "پنجشنبه": true,
+        "جمعه": true
       }
     },
     {
@@ -47,13 +47,13 @@
       "name": "امیرحسین سعیدانژاد",
       "expertise": "متخصص زیبایی",
       "week": {
-        "Saturday": true,
-        "Sunday": true,
-        "Monday": true,
-        "Tuesday": true,
-        "Wednesday": true,
-        "Thursday": true,
-        "Friday": true
+        "شنبه": true,
+        "یکشنبه": true,
+        "دوشنبه": true,
+        "سه‌شنبه": true,
+        "چهارشنبه": true,
+        "پنجشنبه": true,
+        "جمعه": true
       }
     }
   ],
