@@ -1,5 +1,8 @@
 import El from "@/library/El";
 import Dropdown from "../Dropdown";
+import { debounce } from "lodash";
+import getData from "@/library/getData";
+import { renderCart } from "@/library/renderCart";
 
 const Navbar = () => {
   return El({
@@ -12,10 +15,10 @@ const Navbar = () => {
         src: "./src/assets/images/logo.png",
       }),
       El({
-        element: "a",
+        element: "button",
         href: "",
         child: ["تخصص‌ها", Dropdown()],
-        className: "relative [&>*]:hover:block",
+        className: "relative h-20 [&>*]:hover:block",
       }),
       El({
         element: "a",
@@ -24,6 +27,12 @@ const Navbar = () => {
       }),
       El({
         element: "input",
+        onkeyup: debounce((e) => {
+          document.getElementById("main").innerHTML = "";
+          getData(`http://localhost:3000/doctors?q=${e.target.value}`).then(
+            (data) => renderCart(data)
+          );
+        }, 700),
         type: "text",
         className: "border-0 rounded-full pr-4 outline-none bg-[#126E82]",
         placeholder: "جستجو...",

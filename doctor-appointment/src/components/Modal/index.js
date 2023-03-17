@@ -12,7 +12,7 @@ const Modal = (obj) => {
       El({
         element: "div",
         className:
-          "bg-[#132C33] text-white w-[500px] h-[300px] flex flex-col rounded-lg absolute text-lg",
+          "bg-[#132C33] text-white w-[600px] h-[380px] flex flex-col rounded-lg absolute text-lg",
         child: [
           El({
             element: "div",
@@ -63,10 +63,17 @@ const Modal = (obj) => {
           }),
           El({
             element: "div",
-
-            id: obj.id,
-            className: "flex flex-wrap gap-2 justify-center items-center mt-16",
-            child: [...showDay(obj)],
+            id: "btnContainer",
+            className: "flex flex-wrap gap-2 justify-center items-center",
+            child: [
+              El({
+                element: "div",
+                id: obj.id,
+                className:
+                  "flex gap-x-4 gap-y-8 flex-wrap justify-center items-center mt-10",
+                child: [...showDay(obj)],
+              }),
+            ],
           }),
         ],
       }),
@@ -82,17 +89,20 @@ function showDay(obj) {
       weekDaysElemArr.push(
         El({
           element: "button",
-          className: "bg-[#126E82] text-white py-1 px-3 rounded-full",
+          className: "bg-[#126E82] text-white py-2 px-8 rounded-xl",
           child: key,
           onclick: (event) => {
-            event.target
-              .closest("div")
-              .append(
-                appointmentModal(
-                  event.target.closest("div").id,
-                  event.target.innerText
+            event.target.closest("div").classList.add("hidden");
+            console.log(
+              document
+                .getElementById("btnContainer")
+                .append(
+                  appointmentModal(
+                    event.target.closest("div").id,
+                    event.target.innerText
+                  )
                 )
-              );
+            );
           },
         })
       );
@@ -100,7 +110,7 @@ function showDay(obj) {
       weekDaysElemArr.push(
         El({
           element: "button",
-          className: "bg-gray-300 text-white py-1 px-3 rounded-full",
+          className: "bg-gray-300 text-gray-600 py-2 px-8 rounded-xl",
           child: key,
           disabled: true,
         })

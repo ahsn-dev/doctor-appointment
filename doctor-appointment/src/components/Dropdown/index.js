@@ -1,17 +1,31 @@
 import El from "@/library/El";
+import Filter from "@/library/Filter";
+import { renderCart } from "@/library/renderCart";
 
 const Dropdown = () => {
   return El({
     element: "div",
     id: "dropdown",
-    className: "absolute hidden bg-[#132c33] text-white w-60 -right-20 top-12",
+    className:
+      "absolute hidden bg-[#132c33] text-white w-60 -right-20 top-20 transition-all",
     child: El({
       element: "ul",
       className: "p-1",
       child: [
         El({
           element: "li",
-          className: "p-2 bg-[#126E82] rounded mb-1",
+          onclick: (e) => {
+            if (e.target.tagName === "A") {
+              document.getElementById("main").innerHTML = "";
+              Filter(e.target.innerText).then((data) => renderCart(data));
+            } else {
+              document.getElementById("main").innerHTML = "";
+              Filter(e.target.childNodes[0].innerText).then((data) =>
+                renderCart(data)
+              );
+            }
+          },
+          className: "p-2 bg-[#126E82] rounded hover:bg-[#51C4D3] mb-1",
           child: El({
             element: "a",
             child: "دندانپزشک",
@@ -19,7 +33,18 @@ const Dropdown = () => {
         }),
         El({
           element: "li",
-          className: "p-2 bg-[#126E82] rounded mb-1",
+          onclick: (e) => {
+            if (e.target.tagName === "A") {
+              document.getElementById("main").innerHTML = "";
+              Filter(e.target.innerText).then((data) => renderCart(data));
+            } else {
+              document.getElementById("main").innerHTML = "";
+              Filter(e.target.childNodes[0].innerText).then((data) =>
+                renderCart(data)
+              );
+            }
+          },
+          className: "p-2 bg-[#126E82] rounded hover:bg-[#51C4D3] mb-1",
           child: El({
             element: "a",
             child: "قلب و عروق",
@@ -27,7 +52,18 @@ const Dropdown = () => {
         }),
         El({
           element: "li",
-          className: "p-2 bg-[#126E82] rounded mb-1",
+          onclick: (e) => {
+            if (e.target.tagName === "A") {
+              document.getElementById("main").innerHTML = "";
+              Filter(e.target.innerText).then((data) => renderCart(data));
+            } else {
+              document.getElementById("main").innerHTML = "";
+              Filter(e.target.childNodes[0].innerText).then((data) =>
+                renderCart(data)
+              );
+            }
+          },
+          className: "p-2 bg-[#126E82] rounded hover:bg-[#51C4D3] mb-1",
           child: El({
             element: "a",
             child: "مغز و اعصاب",
@@ -35,7 +71,18 @@ const Dropdown = () => {
         }),
         El({
           element: "li",
-          className: "p-2 bg-[#126E82] rounded mb-1",
+          onclick: (e) => {
+            if (e.target.tagName === "A") {
+              document.getElementById("main").innerHTML = "";
+              Filter(e.target.innerText).then((data) => renderCart(data));
+            } else {
+              document.getElementById("main").innerHTML = "";
+              Filter(e.target.childNodes[0].innerText).then((data) =>
+                renderCart(data)
+              );
+            }
+          },
+          className: "p-2 bg-[#126E82] rounded hover:bg-[#51C4D3] mb-1",
           child: El({
             element: "a",
             child: "روانشناس",
@@ -43,15 +90,37 @@ const Dropdown = () => {
         }),
         El({
           element: "li",
-          className: "p-2 bg-[#126E82] rounded mb-1",
+          onclick: (e) => {
+            if (e.target.tagName === "A") {
+              document.getElementById("main").innerHTML = "";
+              Filter(e.target.innerText).then((data) => renderCart(data));
+            } else {
+              document.getElementById("main").innerHTML = "";
+              Filter(e.target.childNodes[0].innerText).then((data) =>
+                renderCart(data)
+              );
+            }
+          },
+          className: "p-2 bg-[#126E82] rounded hover:bg-[#51C4D3] mb-1",
           child: El({
             element: "a",
-            child: "پزشک عمومی",
+            child: "متخصص زیبایی",
           }),
         }),
         El({
           element: "li",
-          className: "p-2 bg-[#126E82] rounded",
+          onclick: (e) => {
+            if (e.target.tagName === "A") {
+              document.getElementById("main").innerHTML = "";
+              Filter(e.target.innerText).then((data) => renderCart(data));
+            } else {
+              document.getElementById("main").innerHTML = "";
+              Filter(e.target.childNodes[0].innerText).then((data) =>
+                renderCart(data)
+              );
+            }
+          },
+          className: "p-2 bg-[#126E82] rounded hover:bg-[#51C4D3]",
           child: El({
             element: "a",
             child: "چشم پزشکی",
